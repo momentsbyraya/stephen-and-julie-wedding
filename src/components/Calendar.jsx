@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { themeConfig } from '../config/themeConfig'
+import { themeConfig, TEXT_ON_PRIMARY_BG } from '../config/themeConfig'
 import { weddingConfig } from '../config/weddingConfig'
 
 // Register ScrollTrigger plugin
@@ -97,10 +97,10 @@ const Calendar = () => {
       <div className="w-full max-w-md sm:max-w-xl lg:max-w-3xl xl:max-w-6xl mx-auto px-4">
       {/* Invitation Text */}
       <div className="text-center mb-8 sm:my-12">
-        <h1 ref={headerRef} className="text-3xl sm:text-5xl font-serif font-light mb-4" style={{ opacity: 0, color: '#F4EEE8' }}>
+        <h1 ref={headerRef} className="text-3xl sm:text-5xl font-serif font-light mb-4" style={{ opacity: 0, color: TEXT_ON_PRIMARY_BG }}>
           The Day
         </h1>
-        <p ref={descriptionRef} className="text-lg md:text-xl leading-relaxed max-w-sm sm:max-w-md mx-auto font-poppins" style={{ opacity: 0, color: '#F4EEE8' }}>
+        <p ref={descriptionRef} className="text-lg md:text-xl leading-relaxed max-w-sm sm:max-w-md mx-auto font-poppins" style={{ opacity: 0, color: TEXT_ON_PRIMARY_BG }}>
           A memorable day awaits us this year, and we want to celebrate it surrounded by loved ones and friends.
         </p>
       </div>

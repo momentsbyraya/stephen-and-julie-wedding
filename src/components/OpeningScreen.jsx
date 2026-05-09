@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import { couples } from '../data'
 import { weddingConfig } from '../config/weddingConfig'
+import { TEXT_ON_PRIMARY_BG } from '../config/themeConfig'
 
 function OpeningScreen({ onEnvelopeOpen, onStampClick }) {
   const envelopeRef = useRef(null)
@@ -31,6 +31,11 @@ function OpeningScreen({ onEnvelopeOpen, onStampClick }) {
     }
   }
 
+  const groomFirstName =
+    (weddingConfig.couple.groom.firstName || '').trim().split(/\s+/)[0] || ''
+  const brideFirstName =
+    (weddingConfig.couple.bride.firstName || '').trim().split(/\s+/)[0] || ''
+
   return (
     <div 
       ref={openingSectionRef}
@@ -50,7 +55,7 @@ function OpeningScreen({ onEnvelopeOpen, onStampClick }) {
         {/* Click me! – at the top of the envelope */}
         <h1 
           className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-antsvalley leading-tight text-center mb-6 sm:mb-8 md:mb-10 click-me-container"
-          style={{ color: '#C46A3A', fontSize: 'clamp(3rem, 8vw, 96px)' }}
+          style={{ color: TEXT_ON_PRIMARY_BG, fontSize: 'clamp(3rem, 8vw, 96px)' }}
         >
           Click me!
         </h1>
@@ -86,14 +91,16 @@ function OpeningScreen({ onEnvelopeOpen, onStampClick }) {
         {/* Couple name and date below envelope */}
         <div className="mt-12 sm:mt-16 md:mt-20 text-center couple-name-container">
           <h2 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-script leading-tight"
-            style={{ color: '#C46A3A', fontSize: 'clamp(1.5rem, 4vw, 48px)' }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-script leading-tight flex flex-row flex-wrap items-baseline justify-center gap-x-2 sm:gap-x-3 gap-y-1"
+            style={{ color: TEXT_ON_PRIMARY_BG, fontSize: 'clamp(1.5rem, 4vw, 48px)' }}
           >
-            {couples.couple.names.together}
+            <span className="whitespace-nowrap">{groomFirstName}</span>
+            <span className="opacity-90">&</span>
+            <span className="whitespace-nowrap">{brideFirstName}</span>
           </h2>
           <p 
             className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-script mt-1"
-            style={{ color: '#C46A3A', fontSize: 'clamp(1rem, 2.5vw, 30px)' }}
+            style={{ color: TEXT_ON_PRIMARY_BG, fontSize: 'clamp(1rem, 2.5vw, 30px)' }}
           >
             {new Date(weddingConfig.wedding.date).toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' }).replace(/\//g, '.')}
           </p>

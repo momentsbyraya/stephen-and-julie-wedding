@@ -47,8 +47,8 @@ body {
   font-family: 'Elsie Swash Caps', cursive;
   font-weight: 400;
   line-height: 1.6;
-  color: #2F2F2F;
-  background-color: #F4EEE8;
+  color: #7f1d1d;
+  background-color: #FFF9F5;
 }
 
 @layer base {
@@ -69,7 +69,7 @@ body {
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, #E9C2A8 0%, #C46A3A 100%);
+    background: linear-gradient(135deg, #F8C8DC 0%, #FFD6C2 55%, #DCC6F2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -131,7 +131,7 @@ body {
   footer:has(a:hover),
   footer:has(a:active),
   footer:has(a:focus) {
-    background-color: #2F2F2F !important;
+    background-color: #4B4453 !important;
   }
   
   footer a:hover,
@@ -332,16 +332,16 @@ body {
 :root {
   --envelope-x: 300px;
   --envelope-y: 200px;
-  --envelope-bg: #B85C38;
-  --envelope-shadow: #8B4A2E;
+  --envelope-bg: #F8C8DC;
+  --envelope-shadow: #C9A2B7;
   --heart-bg: transparent;
-  --heart-text: #2F2F2F;
+  --heart-text: #7f1d1d;
   --letter-font: "Dancing Script", serif;
   --letter-x: 250px;
   --letter-y: calc(250px - 1rem - 10px);
-  --letter-bg: #F4EEE8;
-  --letter-shadow: #C46A3A;
-  --letter-text: #2F2F2F;
+  --letter-bg: #FFF9F5;
+  --letter-shadow: #DCC6F2;
+  --letter-text: #7f1d1d;
 }
 
 @media (min-width: 650px) {
@@ -688,22 +688,22 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F4EEE8;
+  background: #FFF9F5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7E95A6;
+  background: #F8C8DC;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5F7484;
+  background: #E3ADC3;
 }
 
 /* Firefox scrollbar */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #7E95A6 #F4EEE8;
+  scrollbar-color: #F8C8DC #FFF9F5;
 }
 
 /* Upload Section (Oh Snap) */
@@ -714,7 +714,7 @@ body {
 
 .upload-title-text {
   line-height: 0.8;
-  color: #C46A3A; /* Terracotta (primary) */
+  color: #7f1d1d;
 }
 
 .upload-qr-container {

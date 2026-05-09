@@ -1,10 +1,12 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
-import { couples } from '../data'
+import { weddingConfig } from '../config/weddingConfig'
 
 const DynamicTitle = () => {
-  const coupleNames = couples.couple.names.together
-  const weddingDate = new Date(couples.couple.wedding.date).toLocaleDateString('en-US', {
+  const groomFirstName = (weddingConfig.couple.groom.firstName || '').trim().split(' ')[0]
+  const brideFirstName = (weddingConfig.couple.bride.firstName || '').trim().split(' ')[0]
+  const coupleNames = `${groomFirstName} & ${brideFirstName}`
+  const weddingDate = new Date(weddingConfig.wedding.date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'

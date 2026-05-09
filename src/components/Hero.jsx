@@ -1,12 +1,21 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { weddingConfig } from '../config/weddingConfig'
+import { TEXT_ON_PRIMARY_BG } from '../config/themeConfig'
 import { audio } from '../data'
 
-// Overlay color: muted terracotta / burnt orange (#BF6F3D)
-const HERO_OVERLAY_COLOR = '191, 111, 61'
-// Calendar section background – match so bottom gradient connects seamlessly (#C46A3A)
-const CALENDAR_SECTION_COLOR = '196, 106, 58'
+// Overlay color: match theme primary (#F8C8DC)
+const HERO_OVERLAY_COLOR = '248, 200, 220'
+// Calendar section background – keep aligned with hero primary gradient endpoint
+const CALENDAR_SECTION_COLOR = '248, 200, 220'
+
+/** Dark red hero copy + soft cream halo so type stays legible on busy photos */
+const heroTextStyle = {
+  color: TEXT_ON_PRIMARY_BG,
+  letterSpacing: '-0.01em',
+  wordSpacing: '-1px',
+  textShadow: '0 0 14px rgba(255, 249, 245, 0.95), 0 1px 2px rgba(255, 249, 245, 0.9)',
+}
 
 const Hero = () => {
   const audioRef = useRef(null)
@@ -22,6 +31,7 @@ const Hero = () => {
   const { couple, wedding, venue } = weddingConfig
   const ceremony = venue.ceremony
   const venueName = ceremony.name
+  const heroImage = weddingConfig.photos?.hero || '/assets/images/graphics/Prenup4.png'
 
   const formatDate = () => {
     const monthUpper = (wedding.month || '').toUpperCase()
@@ -79,14 +89,14 @@ const Hero = () => {
     <div className="relative w-full" style={{ height: '100vh' }}>
       <audio ref={audioRef} src={audio.background} loop />
 
-      {/* Hero image: object-position keeps couple's faces visible; on 992px+ anchor higher so faces stay in frame */}
+      {/* Hero image: anchor left-ish so framing favors the left; on 992px+ slightly higher for faces */}
       <img
-        src="/assets/images/graphics/Prenup4.png"
+        src={heroImage}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover object-[50%_35%] min-[992px]:object-[50%_28%]"
+        className="absolute inset-0 w-full h-full object-cover object-[28%_35%] sm:object-[26%_35%] min-[992px]:object-[26%_28%]"
       />
 
-      {/* Top gradient overlay – rustic boho dark warm brown, fades down to transparent */}
+      {/* Top gradient overlay */}
       <svg
         className="absolute top-0 left-0 w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] z-10 pointer-events-none"
         preserveAspectRatio="none"
@@ -115,14 +125,14 @@ const Hero = () => {
               <p
                 ref={groomFirstNameRef}
                 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-tight"
-                style={{ color: 'white', letterSpacing: '-0.01em', wordSpacing: '-1px' }}
+                style={heroTextStyle}
               >
                 {couple.groom.firstName}
               </p>
               <p
                 ref={groomLastNameRef}
                 className="font-carattere text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight -mt-2 sm:-mt-3 pl-4 sm:pl-6"
-                style={{ color: 'white', letterSpacing: '-0.01em', wordSpacing: '-1px' }}
+                style={heroTextStyle}
               >
                 {couple.groom.lastName}
               </p>
@@ -130,7 +140,7 @@ const Hero = () => {
             <p
               ref={andRef}
               className="font-poppins text-sm sm:text-base md:text-lg uppercase my-0.5 sm:my-1 font-medium"
-              style={{ color: 'white', letterSpacing: '-0.01em', wordSpacing: '-1px' }}
+              style={heroTextStyle}
             >
               AND
             </p>
@@ -138,14 +148,14 @@ const Hero = () => {
               <p
                 ref={brideFirstNameRef}
                 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase leading-tight"
-                style={{ color: 'white', letterSpacing: '-0.01em', wordSpacing: '-1px' }}
+                style={heroTextStyle}
               >
                 {couple.bride.firstName}
               </p>
               <p
                 ref={brideLastNameRef}
                 className="font-carattere text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight -mt-2 sm:-mt-3 pl-4 sm:pl-6"
-                style={{ color: 'white', letterSpacing: '-0.01em', wordSpacing: '-1px' }}
+                style={heroTextStyle}
               >
                 {couple.bride.lastName}
               </p>
@@ -154,7 +164,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Bottom gradient overlay – transparent at top to opaque rustic boho at bottom */}
+      {/* Bottom gradient overlay */}
       <svg
         className="absolute bottom-0 left-0 w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] z-10 pointer-events-none"
         preserveAspectRatio="none"
@@ -182,7 +192,7 @@ const Hero = () => {
           <p
             ref={dateRef}
             className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl uppercase"
-            style={{ color: 'white', letterSpacing: '-0.01em', wordSpacing: '-1px' }}
+            style={heroTextStyle}
           >
             {formatDate()}
           </p>
@@ -190,7 +200,7 @@ const Hero = () => {
             <p
               ref={venueRef}
               className="font-poppins text-[11px] sm:text-sm md:text-base mt-2 sm:mt-3 text-center max-w-md mx-auto"
-              style={{ color: 'white', letterSpacing: '-0.01em', wordSpacing: '-1px' }}
+              style={heroTextStyle}
             >
               {venueName}
             </p>
@@ -199,9 +209,9 @@ const Hero = () => {
             type="button"
             onClick={scrollToRSVP}
             className="font-poppins text-sm sm:text-base mt-0.5 underline hover:opacity-90 transition-opacity cursor-pointer tracking-wider pb-[5px]"
-            style={{ color: 'white' }}
+            style={heroTextStyle}
           >
-            {weddingConfig.details?.hashtag || 'RSVP'}
+            RSVP
           </button>
         </div>
       </div>

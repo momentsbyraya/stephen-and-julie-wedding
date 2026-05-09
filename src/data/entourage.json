@@ -1,37 +1,120 @@
 {
   "couple": {
     "groom": {
-      "name": "Jerymie Vega"
+      "name": "Stephen L. Hizo"
     },
     "bride": {
-      "name": "Saiza Jane Llido"
+      "name": "Julie M. Nabor"
     }
   },
   "entourageList": [
     {
-      "category": "Ring Bearer",
+      "category": "Parents of the Groom",
       "names": [
-        "Sai-niel Alliswell Llido"
+        "Mr. Norberto A. Hizo",
+        "Mrs. Loreta L. Hizo"
+      ]
+    },
+    {
+      "category": "Parents of the Bride",
+      "names": [
+        "Mr. Jose N. Nabor",
+        "Mrs. Yolanda M. Nabor"
       ]
     },
     {
       "category": "Principal Sponsors",
       "names": [
-        "PCOL RICHARD ANG",
-        "PLTCOL ANGELICA STARLIGHT RIVERA",
-        "PLTCOL ROLITO PIDLAOAN",
-        "PLT JENNIFER CABILES",
-        "PLT ALDRIN MANUEL",
-        "PCMS GILBERT MAGLAYA",
-        "HON. ROLANDO BALIZA",
-        "MARY JANE LAURETA",
-        "PCPT AARON BLANCO",
-        "MR. RAOUL CRUZ",
-        "MR. WILLIAM CALIBUSO",
-        "MR. & MRS YSMAEL AND EUFEMIA TALARO",
-        "MR. & MRS RYAN AND NANCY REODIQUE",
-        "MR. & MRS. JESUSITO AND LARA SULAPAS",
-        "MR. & MRS. MANUEL"
+        "Mr. Alexandro M. Sulit",
+        "Mr. Leo M. Loma",
+        "Mr. Alfredo B. Pares",
+        "Mr. Rey Latican",
+        "Mr. Jun Rosales",
+        "Mrs. Disery M. Loma",
+        "Mrs. Eugenia O. Loma",
+        "Mrs. Flora N. Pares",
+        "Mrs. Melanie Hizo-Villar Yu",
+        "Mrs. Floreña N. Nuñez"
+      ]
+    },
+    {
+      "category": "Best Man",
+      "names": [
+        "Mr. Gerald L. Hizo"
+      ]
+    },
+    {
+      "category": "Maid of Honor",
+      "names": [
+        "Ms. Myla M. Nabor"
+      ]
+    },
+    {
+      "category": "Secondary Sponsor - Candle",
+      "names": [
+        "Mr. Mart Andrew V. Hernandez",
+        "Ms. Ma. Christina L. Hizo"
+      ]
+    },
+    {
+      "category": "Secondary Sponsor - Veil",
+      "names": [
+        "Mr. Dhan Michael F. Frias",
+        "Ms. Angelika Claire L. Dela Cruz"
+      ]
+    },
+    {
+      "category": "Secondary Sponsor - Cord",
+      "names": [
+        "Mr. Daniel Magdasoc",
+        "Ms. Diana L. Sulit"
+      ]
+    },
+    {
+      "category": "Groomsmen",
+      "names": [
+        "Mr. Ralph Dominique C. Tuyay",
+        "Mr. Dave L. Sulit"
+      ]
+    },
+    {
+      "category": "Bridesmaid",
+      "names": [
+        "Ms. Angela L. Guemo",
+        "Ms. Darielle L. Sulit"
+      ]
+    },
+    {
+      "category": "Ring Bearer",
+      "names": [
+        "Elbert James H. Anabo"
+      ]
+    },
+    {
+      "category": "Bible Bearer",
+      "names": [
+        "Gean Gerald Hizo"
+      ]
+    },
+    {
+      "category": "Arrhae Bearer",
+      "names": [
+        "Leomer H. Anabo"
+      ]
+    },
+    {
+      "category": "Rosary Bearer",
+      "names": [
+        "Yosef Gene L. Dollison"
+      ]
+    },
+    {
+      "category": "Flower Girls",
+      "names": [
+        "Erin Aleah L. Logronio",
+        "Katnese P. Noleal",
+        "Zaheen L. Guemo",
+        "Ma. Louise N. Dollison"
       ]
     }
   ]

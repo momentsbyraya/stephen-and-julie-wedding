@@ -1,31 +1,14 @@
 {
   "sections": [
     {
-      "title": "PRINCIPAL SPONSORS",
-      "description": "We invite our principal sponsors to dress in tones from the color palette below—gentlemen in traditional or semi-formal attire, ladies in floor-length or formal wear.",
+      "title": "",
+      "description": "<strong>Principal sponsors</strong> — strictly formal attire in the palette below. <strong>Guests</strong> — semi-formal, in Pastel Pink, Pastel Peach, or Pastel Lilac to match our celebration.",
       "type": "image",
-      "image": "/assets/images/graphics/for%20envelopes%20(5).png",
+      "image": "/assets/images/graphics/guests%20(3).png",
       "colors": [
-        { "name": "Dusty pink (light)", "hex": "#E8C4C8" },
-        { "name": "Dusty pink (medium)", "hex": "#D4A5A5" },
-        { "name": "Dusty pink (dark)", "hex": "#B87D7D" },
-        { "name": "Light beige", "hex": "#e7b491" },
-        { "name": "Khaki", "hex": "#a47f5d" },
-        { "name": "Creamy beige", "hex": "#e8c8a4" }
-      ]
-    },
-    {
-      "title": "GUESTS",
-      "description": "CASUAL / SEMI-FORMAL<br/>We'd love to see you in any of the colors below to match our celebration.",
-      "type": "image",
-      "image": "/assets/images/graphics/for%20envelopes%20(4).png",
-      "colors": [
-        { "name": "Dusty pink (light)", "hex": "#E8C4C8" },
-        { "name": "Dusty pink (medium)", "hex": "#D4A5A5" },
-        { "name": "Dusty pink (dark)", "hex": "#B87D7D" },
-        { "name": "Light beige", "hex": "#e7b491" },
-        { "name": "Khaki", "hex": "#a47f5d" },
-        { "name": "Creamy beige", "hex": "#e8c8a4" }
+        { "name": "Pastel Pink", "hex": "#F8C8DC" },
+        { "name": "Pastel Peach", "hex": "#FFD6C2" },
+        { "name": "Pastel Lilac", "hex": "#DCC6F2" }
       ]
     }
   ]

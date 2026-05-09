@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { weddingConfig } from '../config/weddingConfig'
+import { TEXT_ON_PRIMARY_BG } from '../config/themeConfig'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -55,10 +56,10 @@ const ImageSection = () => {
           </div>
           {/* Bible verse – fixed strip at bottom of polaroid */}
           <div className="flex-shrink-0 px-3 sm:px-4 py-3 sm:py-4 text-center flex flex-col justify-center">
-            <p className="text-xs sm:text-sm font-serif font-semibold mb-1 sm:mb-1.5" style={{ color: '#C46A3A' }}>
+            <p className="text-xs sm:text-sm font-serif font-semibold mb-1 sm:mb-1.5" style={{ color: '#A9758A' }}>
               {BIBLE_VERSE.reference}
             </p>
-            <p className="text-[11px] sm:text-xs font-poppins leading-snug italic" style={{ color: '#2F2F2F' }}>
+            <p className="text-[11px] sm:text-xs font-poppins leading-snug italic" style={{ color: TEXT_ON_PRIMARY_BG }}>
               {BIBLE_VERSE.text}
             </p>
           </div>

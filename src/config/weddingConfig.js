@@ -8,57 +8,57 @@ export const weddingConfig = {
   // Basic Wedding Information
   couple: {
     bride: {
-      firstName: "Saiza Jane",
-      lastName: "Llido",
-      fullName: "Saiza Jane Llido"
+      firstName: "Julie M.",
+      lastName: "Nabor",
+      fullName: "Julie M. Nabor"
     },
     groom: {
-      firstName: "Jerymie",
-      lastName: "Vega",
-      fullName: "Jerymie Vega"
+      firstName: "Stephen L.",
+      lastName: "Hizo",
+      fullName: "Stephen L. Hizo"
     },
-    together: "Jerymie & Saiza"
+    together: "Julie M. Nabor & Stephen L. Hizo"
   },
 
   // Wedding Details
   wedding: {
-    date: "2026-05-17", // YYYY-MM-DD format
+    date: "2026-06-13", // YYYY-MM-DD format
     time: "3:00 PM",
-    dayOfWeek: "Sunday",
-    month: "May",
-    day: "17",
+    dayOfWeek: "Saturday",
+    month: "June",
+    day: "13",
     year: "2026"
   },
 
   // Venue Information
   venue: {
     ceremony: {
-      name: "San Roque's Peak Resort",
+      name: "Nuestra Señora de la Portería Parish Church - Daraga Church",
       address: "Don Enrique Heights, Dulong Crasher",
       city: "Antipolo",
       state: "Rizal",
       zip: "",
-      time: "3:00 PM",
+      time: "9:00 AM",
       details: "Please arrive 30 minutes early"
     },
     reception: {
-      name: "San Roque's Peak Resort",
+      name: "On Due Hotel & Events Place",
       address: "Don Enrique Heights, Dulong Crasher",
       city: "Antipolo",
       state: "Rizal",
       zip: "",
-      time: "6:00 PM",
+      time: "11:00 AM",
       details: "Casual/Semi-formal attire requested"
     }
   },
 
   // RSVP Information
   rsvp: {
-    deadline: "2026-03-23",
-    email: "rsvp@jerymieandsaiza.com",
+    deadline: "2026-05-23",
+    email: "",
     phone: "(555) 123-4567",
-    website: "https://jerymieandsaiza.rsvp",
-    message: "Please RSVP by March 23rd, 2026"
+    website: "",
+    message: "Please RSVP by May 23rd, 2026"
   },
 
   // Theme and Styling
@@ -72,37 +72,48 @@ export const weddingConfig = {
 
   // Photos and Media
   photos: {
-    hero: "/assets/images/hero-couple.jpg",
+    hero: "/assets/images/prenup/1Z6_4594.jpg",
+    saveTheDate: "/assets/images/prenup/1Z6_4510.jpg",
     gallery: [
-      "/assets/images/couple-1.jpg",
-      "/assets/images/couple-2.jpg",
-      "/assets/images/couple-3.jpg",
-      "/assets/images/couple-4.jpg"
+      "/assets/images/prenup/1Z6_3955.jpg",
+      "/assets/images/prenup/1Z6_3989.jpg",
+      "/assets/images/prenup/1Z6_4024.jpg",
+      "/assets/images/prenup/1Z6_4086.jpg",
+      "/assets/images/prenup/1Z6_4145.jpg",
+      "/assets/images/prenup/1Z6_4186.jpg",
+      "/assets/images/prenup/1Z6_4239.jpg",
+      "/assets/images/prenup/1Z6_4249.jpg",
+      "/assets/images/prenup/1Z6_4424.jpg",
+      "/assets/images/prenup/1Z6_4510.jpg",
+      "/assets/images/prenup/1Z6_4627.jpg",
+      "/assets/images/prenup/1Z6_4751.jpg",
+      "/assets/images/prenup/1Z6_4771.jpg",
+      "/assets/images/prenup/1Z6_4925.jpg"
     ],
     background: "/assets/images/background-pattern.jpg",
     // Image shown in the section after Entourage (leave empty string to hide section)
-    sectionAfterEntourage: "/assets/images/graphics/prenup01.png",
+    sectionAfterEntourage: "/assets/images/prenup/1Z6_4024.jpg",
     // Image shown in the section before Gift Guide (leave empty string to hide section)
-    sectionBeforeGift: "/assets/images/couple-2.jpg"
+    sectionBeforeGift: "/assets/images/prenup/1Z6_4086.jpg"
   },
 
   // Additional Information
   details: {
-    hashtag: "#FinallySAIttledDownwithJEM",
+    hashtag: "",
     hashtag2: "To be added",
-    uploadLink: "https://drive.google.com/drive/folders/1ZAieG48s-3Q_QT9cFqXy-MqYDVLNKJue?usp=sharing",
-    uploadQrImage: "/assets/images/graphics/qr-code%20(1)%20(2).png",
-    website: "https://jerymieandsaiza.com",
+    uploadLink: "",
+    uploadQrImage: "",
+    website: "",
     registry: "https://registry.example.com",
     message: "We're excited to celebrate our special day with you!",
     covidInfo: "We're following local health guidelines. Please stay home if you're feeling unwell."
   },
 
-  // Social Media
+  // Social Media (handles only — add links in your deployment if needed)
   social: {
-    instagram: "@jerymieandsaiza",
-    facebook: "JerymieAndSaizaWedding",
-    twitter: "@jerymieandsaiza"
+    instagram: "",
+    facebook: "",
+    twitter: ""
   }
 };
 

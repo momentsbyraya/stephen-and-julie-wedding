@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useMemo } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { themeConfig } from '../config/themeConfig'
-import { dresscode, images } from '../data'
+import { TEXT_ON_PRIMARY_BG } from '../config/themeConfig'
+import { dresscode } from '../data'
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger)
@@ -10,9 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 const DressCode = () => {
   const sectionRef = useRef(null)
   const headerRef = useRef(null)
-  const textRef = useRef(null)
   const paletteRef = useRef(null)
-  const graphicRef = useRef(null)
   const sectionContentRefs = useRef([])
 
   // Random background position, rotation, and flip - Base layer (old-book-2)
@@ -59,14 +57,9 @@ const DressCode = () => {
     })
 
     // Animate elements sequentially
-    tl.fromTo(headerRef.current, 
+    tl.fromTo(headerRef.current,
       { opacity: 0, y: 30 },
       { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }
-    )
-    .fromTo(textRef.current, 
-      { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
-      "-=0.4"
     )
 
     // Animate each section's content with alternating slide directions
@@ -130,32 +123,25 @@ const DressCode = () => {
         <div className="max-w-md sm:max-w-xl lg:max-w-3xl w-full mx-auto px-8 sm:px-12 lg:px-16">
             {/* Header Section */}
           <div ref={headerRef} className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-script text-[#2F2F2F] mb-6" style={{ color: '#C46A3A' }}>
+            <h2 className="text-4xl md:text-5xl font-script mb-6" style={{ color: TEXT_ON_PRIMARY_BG }}>
                 Dress Code
               </h2>
           </div>
-
-          {/* Text Section */}
-          <div ref={textRef} className="text-center mb-12">
-            <p className="text-base sm:text-lg font-albert font-thin text-[#2F2F2F] max-w-3xl mx-auto leading-relaxed">
-              We'd be grateful if your outfit could match the color theme of our celebration
-              </p>
-            </div>
 
           {/* Dress Code Sections */}
           <div ref={paletteRef} className="space-y-8 mb-8">
             {dresscode.sections && dresscode.sections.map((section, sectionIndex) => (
               <div key={sectionIndex} className="text-center">
-                {/* Section Title */}
-                <h3 
-                  className="text-lg sm:text-xl md:text-2xl font-albert font-bold mb-4 tracking-wider"
-                  style={{ color: '#C46A3A' }}
-                  dangerouslySetInnerHTML={{ __html: section.title }}
-                />
-                
-                {/* Description */}
+                {section.title?.trim() ? (
+                  <h3
+                    className="text-lg sm:text-xl md:text-2xl font-albert font-bold mb-4 tracking-wider"
+                    style={{ color: TEXT_ON_PRIMARY_BG }}
+                    dangerouslySetInnerHTML={{ __html: section.title }}
+                  />
+                ) : null}
+
                 {section.description && (
-                  <p className="text-sm sm:text-base font-albert text-[#2F2F2F] mb-4 max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: section.description }} />
+                  <p className="text-sm sm:text-base md:text-[0.95rem] font-albert mb-6 max-w-3xl mx-auto leading-relaxed" style={{ color: TEXT_ON_PRIMARY_BG }} dangerouslySetInnerHTML={{ __html: section.description }} />
                 )}
                 
                 {/* Section Content */}
@@ -165,10 +151,10 @@ const DressCode = () => {
                     className="flex flex-col items-center gap-4 w-full"
                   >
                     <div className="w-full">
-                      <img 
-                        src={section.image} 
-                        alt={section.title} 
-                        className="w-full h-auto"
+                      <img
+                        src={section.image}
+                        alt=""
+                        className="w-full h-auto max-w-2xl mx-auto rounded-md"
                       />
                     </div>
                     {/* All color swatches side by side */}
@@ -181,10 +167,10 @@ const DressCode = () => {
                             title={color.name}
                           >
                             <div 
-                              className="w-8 h-8 rounded-full shrink-0 ring-2 ring-transparent group-hover:ring-[#2F2F2F]/20 transition-shadow"
+                              className="w-8 h-8 rounded-full shrink-0 ring-2 ring-transparent group-hover:ring-[#7f1d1d]/25 transition-shadow"
                               style={{ backgroundColor: color.hex }}
                             />
-                            <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-1 text-xs font-medium text-white bg-[#2F2F2F] rounded whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
+                            <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-1 text-xs font-medium text-white bg-[#7f1d1d] rounded whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
                               {color.name}
                             </span>
                           </div>
@@ -207,7 +193,7 @@ const DressCode = () => {
                           className="h-8 rounded-sm"
                           style={{ backgroundColor: color.hex }}
                         />
-                        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-1 text-xs font-medium text-white bg-[#2F2F2F] rounded whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
+                        <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-1 text-xs font-medium text-white bg-[#7f1d1d] rounded whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
                           {color.name}
                         </span>
                       </div>

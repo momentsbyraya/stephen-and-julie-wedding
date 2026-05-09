@@ -1,48 +1,51 @@
-// Theme Configuration - Rustic Boho: Terracotta/Clay, Dusty Blue, Warm Cream, Peach Sand
+/** Dark red for readable text on blush/cream primaries (#FFF9F5, #F8C8DC); replaces pink-as-text when needed */
+export const TEXT_ON_PRIMARY_BG = '#7f1d1d'
+
+// Theme Configuration - Soft Romantic Pastel
 export const themeConfig = {
-    // Background Colors (warm cream primary, peach sand / pale blue for sections)
+    // Background Colors
     backgrounds: {
-        primary: 'bg-[#2F2F2F]',
-        secondary: 'bg-[#E9C2A8]',
-        accent: 'bg-[#7E95A6]',
-        light: 'bg-[#F4EEE8]/50',
-        theme: 'bg-[#F4EEE8]',
+        primary: 'bg-[#FFF9F5]',
+        secondary: 'bg-[#FFD6C2]',
+        accent: 'bg-[#DCC6F2]',
+        light: 'bg-[#FFFFFF]/70',
+        theme: 'bg-[#FFFFFF]',
         crumpledPaper: 'bg-[url("/assets/images/crumpled-paper.png")] bg-cover bg-center bg-no-repeat',
     },
 
-    // Text Colors (charcoal primary, muted for secondary)
+    // Text Colors
     text: {
-        primary: 'text-[#2F2F2F]',
-        secondary: 'text-[#5a524a]',
-        accent: 'text-[#7E95A6]',
-        muted: 'text-[#E9C2A8]',
-        dark: 'text-[#2F2F2F]',
-        theme: 'text-[#C46A3A]',
-        pause: 'text-[#F4EEE8]',
-        custom: 'text-[#2F2F2F]',
+        primary: 'text-[#7f1d1d]',
+        secondary: 'text-[#6A6075]',
+        accent: 'text-[#A9758A]',
+        muted: 'text-[#DCC6F2]',
+        dark: 'text-[#7f1d1d]',
+        theme: 'text-[#A9758A]',
+        pause: 'text-[#FFFFFF]',
+        custom: 'text-[#7f1d1d]',
     },
 
     // Border Colors
     borders: {
-        primary: 'border-[#E9C2A8]',
-        secondary: 'border-[#C46A3A]',
-        accent: 'border-[#7E95A6]',
-        theme: 'border-[#C46A3A]',
+        primary: 'border-[#F8C8DC]',
+        secondary: 'border-[#F8C8DC]',
+        accent: 'border-[#DCC6F2]',
+        theme: 'border-[#E3ADC3]',
     },
 
-    // Button Colors (Primary → Terracotta, Secondary → Dusty Blue)
+    // Button Colors
     buttons: {
-        primary: 'bg-[#C46A3A] hover:bg-[#a85830]',
-        secondary: 'border border-[#C46A3A] hover:border-[#E9C2A8]',
-        text: 'text-[#F4EEE8] hover:text-white',
-        theme: 'bg-[#7E95A6] hover:bg-[#5F7484]',
+        primary: 'bg-[#F8C8DC] hover:bg-[#E3ADC3]',
+        secondary: 'border border-[#F8C8DC] hover:border-[#E3ADC3]',
+        text: 'text-[#4B4453] hover:text-[#4B4453]',
+        theme: 'bg-[#F8C8DC] hover:bg-[#E3ADC3]',
     },
 
     // Hover Effects
     hover: {
-        primary: 'hover:bg-[#a85830]',
-        secondary: 'hover:border-[#E9C2A8] hover:text-[#2F2F2F]',
-        theme: 'hover:bg-[#5F7484]',
+        primary: 'hover:bg-[#E3ADC3]',
+        secondary: 'hover:border-[#E3ADC3] hover:text-[#7f1d1d]',
+        theme: 'hover:bg-[#E3ADC3]',
     },
 
     // Container Configuration
@@ -52,28 +55,28 @@ export const themeConfig = {
         center: 'mx-auto',
     },
 
-    // Calendar Configuration (Rustic Boho) - section uses title color as background; titles/text in cream for contrast
+    // Calendar Configuration
     calendar: {
-        weddingDate: '2026-05-17',
-        highlightColor: 'bg-[#F4EEE8]',
-        heartColor: 'text-[#7E95A6]',
-        textColor: 'text-[#F4EEE8]',
-        headerColor: 'text-[#F4EEE8]',
-        dayNamesColor: 'text-[#F4EEE8]/90',
-        background: 'bg-[#C46A3A]',
+        weddingDate: '2026-06-13',
+        highlightColor: 'bg-[#FFF9F5]',
+        heartColor: 'text-[#A9758A]',
+        textColor: 'text-[#7f1d1d]',
+        headerColor: 'text-[#7f1d1d]',
+        dayNamesColor: 'text-[#7f1d1d]/95',
+        background: 'bg-[#F8C8DC]',
     },
 
-    // Custom CSS Variables (Rustic Boho)
+    // Custom CSS Variables
     cssVariables: {
-        '--primary-bg': '#C46A3A',
-        '--secondary-bg': '#E9C2A8',
-        '--accent-bg': '#7E95A6',
-        '--primary-text': '#2F2F2F',
-        '--secondary-text': '#5a524a',
-        '--accent-text': '#7E95A6',
-        '--muted-text': '#E9C2A8',
-        '--border-color': '#C46A3A',
-        '--custom-theme': '#F4EEE8',
+        '--primary-bg': '#F8C8DC',
+        '--secondary-bg': '#FFD6C2',
+        '--accent-bg': '#DCC6F2',
+        '--primary-text': '#7f1d1d',
+        '--secondary-text': '#6A6075',
+        '--accent-text': '#A9758A',
+        '--muted-text': '#DCC6F2',
+        '--border-color': '#E3ADC3',
+        '--custom-theme': '#FFF9F5',
     }
 }
 

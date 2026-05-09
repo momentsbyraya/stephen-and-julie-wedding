@@ -1,36 +1,24 @@
 {
   "faqData": [
     {
-      "question": "What time should I arrive?",
-      "answer": "Please arrive at least 30 minutes before the ceremony start time. This allows time for parking, seating, and getting settled."
+      "question": "RSVP",
+      "answer": "Please confirm your attendance by the date indicated on your invitation. We have reserved one seat especially for you."
     },
     {
-      "question": "Can I bring a plus one?",
-      "answer": "Plus ones are welcome if they were included in your invitation. Please check your RSVP for the exact number of guests."
+      "question": "Adult-Only Celebration",
+      "answer": "We love children, but this event will be for adults only. Thank you for understanding."
     },
     {
-      "question": "Is there a dress code?",
-      "answer": "Yes, the dress code is formal attire (black tie optional). We want everyone to feel elegant and comfortable."
+      "question": "Dress Code",
+      "answer": "Wear what makes you feel good, keeping it formal and within our colors."
     },
     {
-      "question": "Are children welcome?",
-      "answer": "We love children, but this will be an adults-only celebration. We appreciate you making arrangements for childcare."
+      "question": "Gifts",
+      "answer": "Your company is the greatest gift. Should you wish to bless us further, we would be grateful for cash gifts, which may also be shared digitally."
     },
     {
-      "question": "What type of food will be served?",
-      "answer": "We will be serving a plated dinner with multiple course options. Please indicate any dietary restrictions when you RSVP, and we'll do our best to accommodate your needs."
-    },
-    {
-      "question": "Is there parking available?",
-      "answer": "Yes, both venues have parking available. The ceremony venue has on-site parking, and the reception venue offers valet parking."
-    },
-    {
-      "question": "Can I take photos during the ceremony?",
-      "answer": "We kindly ask that you refrain from taking photos during the ceremony. Our professional photographer will capture all the special moments, and we'll share the photos with everyone afterward."
-    },
-    {
-      "question": "What's the best way to RSVP?",
-      "answer": "Please use the RSVP button on our website. You can also contact us directly if you have any issues with the online RSVP system."
+      "question": "Venue & Schedule",
+      "answer": "Our celebration will take place at On Due Hotel & Events Place. Parking is available, with staff ready to guide you."
     }
   ]
 } 

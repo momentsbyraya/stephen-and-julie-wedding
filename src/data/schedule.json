@@ -2,29 +2,29 @@
   "events": [
     {
       "id": 1,
-      "time": "2:00 PM",
-      "title": "Gathering",
+      "time": "8:00 AM",
+      "title": "Guest Gathering",
       "description": "Guests arrive and gather",
       "venue": "San Roque's Peak Resort"
     },
     {
       "id": 2,
-      "time": "3:00 PM",
-      "title": "Ceremony",
+      "time": "9:00 AM",
+      "title": "Wedding Ceremony",
       "description": "Wedding ceremony",
       "venue": "San Roque's Peak Resort"
     },
     {
       "id": 3,
-      "time": "6:00 PM",
-      "title": "Reception Dinner",
+      "time": "11:00 AM",
+      "title": "Reception",
       "description": "Dinner and celebration",
-      "venue": "San Roque's Peak Resort"
+      "venue": "On Due Hotel & Events Place"
     },
     {
       "id": 4,
-      "time": "9:00 PM",
-      "title": "End",
+      "time": "3:00 PM",
+      "title": "End Time",
       "description": "Thank you for celebrating with us",
       "venue": "San Roque's Peak Resort"
     }
