@@ -1,10 +1,10 @@
 {
   "venue": {
-    "name": "On Due Hotel & Events Place",
-    "address": "Don Enrique Heights, Dulong Crasher",
-    "city": "Antipolo",
-    "state": "Rizal",
-    "zip": "",
+    "name": "Sinandayan Sua, Camalig",
+    "address": "Purok 1, Sinandayan Sua, Bypass Road",
+    "city": "Camalig",
+    "state": "Albay, Philippines",
+    "zip": "4502",
     "ceremony": {
       "time": "3:00 PM",
       "details": "Please arrive 30 minutes early."
@@ -12,14 +12,14 @@
     "reception": {
       "time": "11:00 AM",
       "details": "Casual/Semi-formal attire requested.",
-      "directionsUrl": "https://www.google.com/maps/place/On+Due+Hotel+%26+Events+Place/@13.1860774,123.64447,17z/data=!3m1!4b1!4m9!3m8!1s0x33a107d36936320b:0xc0da12190da3d868!5m2!4m1!1i2!8m2!3d13.1860774!4d123.64447!16s%2Fg%2F11q41q5d8w!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+      "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Purok+1%2C+Sinandayan+Sua%2C+Bypass+Road%2C+Camalig%2C+Albay%2C+Philippines+4502"
     },
     "image": "/assets/images/venue/ON DUE.jpg",
     "ceremonyImage": "/assets/images/venue/daraga-church-our-lady.jpg",
     "receptionImage": "/assets/images/venue/ON DUE.jpg",
-    "photoCaptionLeft": "Our Rooftop Pool Deck",
+    "photoCaptionLeft": "Our reception",
     "ceremonyCaptionLeft": "Ceremony location",
-    "googleMapsUrl": "https://www.google.com/maps/place/Nuestra+Se%C3%B1ora+de+la+Porter%C3%ADa+Parish+Church+-+Daraga+Church/@13.1498661,123.7123184,17z/data=!3m1!4b1!4m6!3m5!1s0x33a103fe05155939:0xd5ab3115430f74e5!8m2!3d13.1498661!4d123.7123184!16s%2Fm%2F0121_pnx!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D",
-    "directionsUrl": "https://www.google.com/maps/place/Nuestra+Se%C3%B1ora+de+la+Porter%C3%ADa+Parish+Church+-+Daraga+Church/@13.1498661,123.7123184,17z/data=!3m1!4b1!4m6!3m5!1s0x33a103fe05155939:0xd5ab3115430f74e5!8m2!3d13.1498661!4d123.7123184!16s%2Fm%2F0121_pnx!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Santa+Maria+Hill%2C+Sta.+Maria+St.%2C+Barangay+San+Roque%2C+Daraga%2C+Albay%2C+Philippines+4501",
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Santa+Maria+Hill%2C+Sta.+Maria+St.%2C+Barangay+San+Roque%2C+Daraga%2C+Albay%2C+Philippines+4501"
   }
 } 

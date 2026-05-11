@@ -3,6 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { IoHeart } from 'react-icons/io5'
 import { themeConfig, TEXT_ON_PRIMARY_BG } from '../config/themeConfig'
+import { weddingConfig } from '../config/weddingConfig'
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger)
@@ -61,11 +62,12 @@ const GiftGuideAndSnapShare = () => {
                 Gift Guide
               </h2>
               <p className="text-base md:text-lg font-poppins max-w-3xl mx-auto mb-8" style={{ color: TEXT_ON_PRIMARY_BG }}>
-                Your presence is our greatest gift. If you’d like to give something more, a small envelope for our future would be a blessing.
+                {weddingConfig.giftGuide?.message ??
+                  'Your company is the greatest gift. Should you wish to bless us further, we would be grateful for cash gifts, which may also be shared digitally.'}
               </p>
             </div>
 
-            {/* QR code - same layout as Oh Snap */}
+            {/* QR code */}
             <div className="mx-auto upload-stack flex flex-col items-center justify-center gap-6">
               <div className="upload-qr-container w-full">
                 <div className="bg-white p-4 rounded-lg shadow-md w-full h-full flex items-center justify-center">

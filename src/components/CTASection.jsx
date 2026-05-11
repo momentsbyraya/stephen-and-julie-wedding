@@ -66,6 +66,9 @@ const CTASection = () => {
                 Your presence would make our special day even more meaningful.<br />
                 Please let us know if you'll be joining us for our celebration.
               </p>
+              <p className="mt-6 text-sm md:text-base font-poppins font-medium" style={{ color: TEXT_ON_PRIMARY_BG }}>
+                We have reserved 1 seat for you.
+              </p>
             </div>
 
             {/* RSVP Button */}
@@ -73,7 +76,7 @@ const CTASection = () => {
               <button
                 onClick={openRSVPModal}
                 className="w-full inline-flex items-center justify-center space-x-3 px-8 py-3 sm:py-5 lg:py-2 rounded-sm transition-colors duration-200 text-sm sm:text-2xl lg:text-base font-medium hover:opacity-90"
-                style={{ backgroundColor: '#F8C8DC', color: TEXT_ON_PRIMARY_BG }}
+                style={{ backgroundColor: '#f6dadf', color: TEXT_ON_PRIMARY_BG }}
               >
                 <span>RSVP</span>
                 <Mail className="w-5 h-5 sm:w-6 sm:h-6" />

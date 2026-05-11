@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { gsap } from 'gsap'
 import { X } from 'lucide-react'
+import { weddingConfig } from '../config/weddingConfig'
 
 const RSVPModal = ({ isOpen, onClose }) => {
+  const embedUrl = (weddingConfig.rsvp?.formEmbedUrl || '').trim()
   const modalRef = useRef(null)
   const overlayRef = useRef(null)
   const contentRef = useRef(null)
@@ -87,11 +89,34 @@ const RSVPModal = ({ isOpen, onClose }) => {
           </button>
         </div>
         
-        {/* RSVP Content — form URL to be added */}
-        <div className="p-6 overflow-y-auto max-h-[70vh] flex items-center justify-center min-h-[240px] sm:min-h-[280px]">
-          <p className="text-center font-serif text-lg sm:text-xl text-wedding-800 tracking-wide" aria-live="polite">
-            TO BE ADDED
-          </p>
+        <div className="p-6 overflow-y-auto max-h-[70vh] min-h-[240px] sm:min-h-[280px]">
+          {embedUrl ? (
+            <iframe
+              title="RSVP form"
+              src={embedUrl}
+              className="h-[min(72vh,640px)] w-full rounded-lg border border-wedding-200 bg-wedding-50"
+            />
+          ) : (
+            <div className="flex min-h-[220px] flex-col items-center justify-center gap-4 px-2 text-center">
+              <p className="font-serif text-lg text-wedding-800 sm:text-xl" aria-live="polite">
+                {weddingConfig.rsvp?.message || 'Please RSVP'}
+              </p>
+              {weddingConfig.rsvp?.website ? (
+                <a
+                  href={weddingConfig.rsvp.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex rounded-full border border-wedding-300 bg-wedding-50 px-6 py-2 font-poppins text-sm font-medium text-wedding-800 transition-colors hover:bg-wedding-100"
+                >
+                  Open RSVP form
+                </a>
+              ) : (
+                <p className="max-w-md font-poppins text-sm text-wedding-600">
+                  Online RSVP will appear here once the form is connected.
+                </p>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>,

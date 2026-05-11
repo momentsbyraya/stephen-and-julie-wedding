@@ -62,22 +62,19 @@ const DressCode = () => {
       { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }
     )
 
-    // Animate each section's content with alternating slide directions
-    sectionContentRefs.current.forEach((ref, index) => {
-      if (ref) {
-        const isEven = index % 2 === 0
-        const xFrom = isEven ? -100 : 100 // Even indices slide from left, odd from right
-        
-        ScrollTrigger.create({
-          trigger: ref,
-          start: "top 80%",
-          animation: gsap.fromTo(ref,
-            { opacity: 0, x: xFrom },
-            { opacity: 1, x: 0, duration: 0.8, ease: "power2.out" }
-          ),
-          toggleActions: "play none none reverse"
-        })
-      }
+    // Fade + slight vertical motion only (horizontal x slide clipped this section under overflow-hidden)
+    sectionContentRefs.current.forEach((ref) => {
+      if (!ref) return
+      ScrollTrigger.create({
+        trigger: ref,
+        start: 'top 80%',
+        animation: gsap.fromTo(
+          ref,
+          { opacity: 0, y: 24 },
+          { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' }
+        ),
+        toggleActions: 'play none none reverse'
+      })
     })
 
     // Cleanup function
@@ -148,13 +145,13 @@ const DressCode = () => {
                 {section.type === "image" && section.image ? (
                 <div 
                     ref={el => sectionContentRefs.current[sectionIndex] = el}
-                    className="flex flex-col items-center gap-4 w-full"
+                    className="flex w-full flex-col items-center gap-4"
                   >
-                    <div className="w-full">
+                    <div className="flex w-full justify-center overflow-hidden">
                       <img
                         src={section.image}
                         alt=""
-                        className="w-full h-auto max-w-2xl mx-auto rounded-md"
+                        className="h-auto max-h-[min(72vh,560px)] w-full max-w-2xl rounded-md object-contain object-center"
                       />
                     </div>
                     {/* All color swatches side by side */}

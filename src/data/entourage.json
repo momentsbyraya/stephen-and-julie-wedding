@@ -1,4 +1,5 @@
 {
+  "summary": "Stephen and Julie are grateful to everyone taking part in their day—from parents and principal sponsors to attendants, bearers, and flower girls who make the ceremony complete.",
   "couple": {
     "groom": {
       "name": "Stephen L. Hizo"
@@ -24,17 +25,12 @@
     },
     {
       "category": "Principal Sponsors",
-      "names": [
-        "Mr. Alexandro M. Sulit",
-        "Mr. Leo M. Loma",
-        "Mr. Alfredo B. Pares",
-        "Mr. Rey Latican",
-        "Mr. Jun Rosales",
-        "Mrs. Disery M. Loma",
-        "Mrs. Eugenia O. Loma",
-        "Mrs. Flora N. Pares",
-        "Mrs. Melanie Hizo-Villar Yu",
-        "Mrs. Floreña N. Nuñez"
+      "pairs": [
+        ["Mr. Alexandro M. Sulit", "Mrs. Disery M. Loma"],
+        ["Mr. Leo M. Loma", "Mrs. Eugenia O. Loma"],
+        ["Mr. Alfredo B. Pares", "Mrs. Flora N. Pares"],
+        ["Mr. Rey Latican", "Mrs. Melanie Hizo-Villar Yu"],
+        ["Mr. Jun Rosales", "Mrs. Floreña N. Nuñez"]
       ]
     },
     {

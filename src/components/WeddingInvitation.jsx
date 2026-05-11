@@ -16,7 +16,6 @@ import MapDirections from './Venue'
 import CTASection from './CTASection'
 import SectionBeforeGift from './SectionBeforeGift'
 import GiftGuideAndSnapShare from './GiftGuideAndSnapShare'
-import PhotoUpload from './PhotoUpload'
 import EnhancedLazySection from './EnhancedLazySection'
 
 const WeddingInvitation = () => {
@@ -53,7 +52,13 @@ const WeddingInvitation = () => {
         </EnhancedLazySection>
 
         {/* Schedule Section */}
-        <EnhancedLazySection animationClass="fade-scale" sectionName="invitation" threshold={0.1} rootMargin="0px 0px 50px 0px">
+        <EnhancedLazySection
+          animationClass="fade-scale"
+          sectionName="invitation"
+          threshold={0.1}
+          rootMargin="0px 0px 50px 0px"
+          overflowVisible
+        >
           <Schedule />
         </EnhancedLazySection>
 
@@ -104,13 +109,8 @@ const WeddingInvitation = () => {
         {/* Gift Guide & Snap & Share Section */}
         <EnhancedLazySection animationClass="fade-scale" sectionName="gift-guide-snap-share">
           <GiftGuideAndSnapShare />
-        </EnhancedLazySection>   
-
-        {/* Oh Snap (Photo Upload) Section */}
-        <EnhancedLazySection animationClass="fade-scale" sectionName="photo-upload">
-          <PhotoUpload />
         </EnhancedLazySection>
-        
+
         {/* Wedding Details */}
         <EnhancedLazySection animationClass="fade-slide-up" sectionName="counter">
           <Counter countdown={countdown} />

@@ -3,6 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { themeConfig, TEXT_ON_PRIMARY_BG } from '../config/themeConfig'
 import { weddingConfig } from '../config/weddingConfig'
+import { loveStory } from '../data'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -148,7 +149,7 @@ const Counter = ({ countdown }) => {
                     Our Love Story
                   </p>
                   <p className="text-center lg:text-right text-sm sm:text-base font-poppins leading-relaxed italic" style={{ color: '#6A6075' }}>
-                    We started working together, dated, fell in love, and were separated for a decade, only to meet again over time
+                    {loveStory.story}
                   </p>
                 </div>
               </div>

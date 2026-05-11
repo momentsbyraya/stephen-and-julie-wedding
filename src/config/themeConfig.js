@@ -1,4 +1,4 @@
-/** Dark red for readable text on blush/cream primaries (#FFF9F5, #F8C8DC); replaces pink-as-text when needed */
+/** Dark red for readable text on blush/cream primaries (#FFF9F5, #f6dadf); replaces pink-as-text when needed */
 export const TEXT_ON_PRIMARY_BG = '#7f1d1d'
 
 // Theme Configuration - Soft Romantic Pastel
@@ -27,18 +27,18 @@ export const themeConfig = {
 
     // Border Colors
     borders: {
-        primary: 'border-[#F8C8DC]',
-        secondary: 'border-[#F8C8DC]',
+        primary: 'border-[#f6dadf]',
+        secondary: 'border-[#f6dadf]',
         accent: 'border-[#DCC6F2]',
         theme: 'border-[#E3ADC3]',
     },
 
     // Button Colors
     buttons: {
-        primary: 'bg-[#F8C8DC] hover:bg-[#E3ADC3]',
-        secondary: 'border border-[#F8C8DC] hover:border-[#E3ADC3]',
+        primary: 'bg-[#f6dadf] hover:bg-[#E3ADC3]',
+        secondary: 'border border-[#f6dadf] hover:border-[#E3ADC3]',
         text: 'text-[#4B4453] hover:text-[#4B4453]',
-        theme: 'bg-[#F8C8DC] hover:bg-[#E3ADC3]',
+        theme: 'bg-[#f6dadf] hover:bg-[#E3ADC3]',
     },
 
     // Hover Effects
@@ -63,12 +63,12 @@ export const themeConfig = {
         textColor: 'text-[#7f1d1d]',
         headerColor: 'text-[#7f1d1d]',
         dayNamesColor: 'text-[#7f1d1d]/95',
-        background: 'bg-[#F8C8DC]',
+        background: 'bg-[#f6dadf]',
     },
 
     // Custom CSS Variables
     cssVariables: {
-        '--primary-bg': '#F8C8DC',
+        '--primary-bg': '#f6dadf',
         '--secondary-bg': '#FFD6C2',
         '--accent-bg': '#DCC6F2',
         '--primary-text': '#7f1d1d',

@@ -32,23 +32,17 @@ const SectionBeforeGift = () => {
   return (
     <section
       ref={sectionRef}
-      className={`relative py-12 sm:py-16 w-full overflow-hidden min-h-[313px] sm:min-h-[40vh] ${themeConfig.calendar.background}`}
+      className={`relative w-full overflow-hidden py-12 sm:py-16 ${themeConfig.backgrounds.secondary}`}
       aria-label="Section before gift"
     >
       <div
         ref={imageRef}
-        className="absolute rounded-none sm:rounded-lg overflow-hidden shadow-lg"
-        style={{
-          left: -157,
-          top: -613,
-          width: 'calc(100% + 314px)',
-          height: 'calc(100% + 1226px)'
-        }}
+        className="relative mx-auto h-[313px] w-full overflow-hidden rounded-none shadow-lg sm:h-[40vh] sm:rounded-lg"
       >
         <img
           src={imagePath}
           alt=""
-          className="w-full h-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
     </section>

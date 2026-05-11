@@ -4,10 +4,10 @@ import { weddingConfig } from '../config/weddingConfig'
 import { TEXT_ON_PRIMARY_BG } from '../config/themeConfig'
 import { audio } from '../data'
 
-// Overlay color: match theme primary (#F8C8DC)
-const HERO_OVERLAY_COLOR = '248, 200, 220'
+// Overlay color: match theme primary (#f6dadf)
+const HERO_OVERLAY_COLOR = '246, 218, 223'
 // Calendar section background – keep aligned with hero primary gradient endpoint
-const CALENDAR_SECTION_COLOR = '248, 200, 220'
+const CALENDAR_SECTION_COLOR = '246, 218, 223'
 
 /** Dark red hero copy + soft cream halo so type stays legible on busy photos */
 const heroTextStyle = {
@@ -86,14 +86,14 @@ const Hero = () => {
   }
 
   return (
-    <div className="relative w-full" style={{ height: '100vh' }}>
+    <div className="relative w-full overflow-hidden" style={{ height: '100vh' }}>
       <audio ref={audioRef} src={audio.background} loop />
 
-      {/* Hero image: anchor left-ish so framing favors the left; on 992px+ slightly higher for faces */}
+      {/* Hero image: slight CW rotate from top edge (top leans toward the right); scale avoids corner gaps */}
       <img
         src={heroImage}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover object-[28%_35%] sm:object-[26%_35%] min-[992px]:object-[26%_28%]"
+        className="absolute inset-0 w-full h-full object-cover object-[20%_35%] sm:object-[18%_35%] min-[992px]:object-[18%_28%] origin-top rotate-[1.5deg] scale-[1.08]"
       />
 
       {/* Top gradient overlay */}

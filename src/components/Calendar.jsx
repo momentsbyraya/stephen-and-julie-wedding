@@ -92,9 +92,43 @@ const Calendar = () => {
     }
   }, [])
   
+  const floralTopRight = '/assets/images/graphics/topright.png'
+  const floralBottomLeft = '/assets/images/graphics/bottomleft.png'
+  const floralBottomRight = '/assets/images/graphics/bottomright.png'
+
+  const floralBaseClass =
+    'pointer-events-none select-none absolute z-[1] max-w-none h-auto object-contain'
+  const floralTopRightClass =
+    `${floralBaseClass} w-[min(72vw,19rem)] sm:w-[min(60vw,25rem)] md:w-[min(52vw,30rem)] lg:w-[min(44vw,38rem)]`
+  const floralBottomCornerClass =
+    `${floralBaseClass} w-[min(52vw,14rem)] sm:w-[min(42vw,18rem)] md:w-[min(36vw,22rem)] lg:w-[min(30vw,26rem)]`
+
   return (
-    <div ref={sectionRef} className={`relative w-full min-w-full ${themeConfig.calendar.background}`} style={{ paddingTop: '5rem', paddingBottom: '5rem', boxSizing: 'border-box' }}>
-      <div className="w-full max-w-md sm:max-w-xl lg:max-w-3xl xl:max-w-6xl mx-auto px-4">
+    <div
+      ref={sectionRef}
+      className={`relative w-full min-w-full overflow-hidden ${themeConfig.calendar.background}`}
+      style={{ paddingTop: '5rem', paddingBottom: '5rem', boxSizing: 'border-box' }}
+    >
+      <img
+        src={floralTopRight}
+        alt=""
+        aria-hidden
+        className={`${floralTopRightClass} top-0 right-0 object-top`}
+      />
+      <img
+        src={floralBottomLeft}
+        alt=""
+        aria-hidden
+        className={`${floralBottomCornerClass} bottom-0 left-0 object-bottom`}
+      />
+      <img
+        src={floralBottomRight}
+        alt=""
+        aria-hidden
+        className={`${floralBottomCornerClass} bottom-0 right-0 object-bottom`}
+      />
+
+      <div className="relative z-[2] w-full max-w-md sm:max-w-xl lg:max-w-3xl xl:max-w-6xl mx-auto px-4 sm:px-6">
       {/* Invitation Text */}
       <div className="text-center mb-8 sm:my-12">
         <h1 ref={headerRef} className="text-3xl sm:text-5xl font-serif font-light mb-4" style={{ opacity: 0, color: TEXT_ON_PRIMARY_BG }}>
@@ -141,12 +175,15 @@ const Calendar = () => {
                 >
                   {day && (
                     <>
-                      <span className={isWeddingDay ? 'relative z-10' : ''}>
+                      {isWeddingDay && (
+                        <span
+                          className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[82%] w-[82%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FFF9F5]/90 shadow-[inset_0_0_0_1.5px_rgba(127,29,45,0.16)]"
+                          aria-hidden
+                        />
+                      )}
+                      <span className={isWeddingDay ? 'relative z-10 font-semibold' : ''}>
                         {day}
                       </span>
-                      {isWeddingDay && (
-                        <div className={`absolute inset-0 rounded-full ${themeConfig.calendar.highlightColor} opacity-20`}></div>
-                      )}
                     </>
                   )}
                 </div>

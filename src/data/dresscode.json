@@ -2,11 +2,11 @@
   "sections": [
     {
       "title": "",
-      "description": "<strong>Principal sponsors</strong> — strictly formal attire in the palette below. <strong>Guests</strong> — semi-formal, in Pastel Pink, Pastel Peach, or Pastel Lilac to match our celebration.",
+      "description": "Wear what makes you feel good, keeping it semi-formal, and within our colors.",
       "type": "image",
-      "image": "/assets/images/graphics/guests%20(3).png",
+      "image": "/assets/images/graphics/guests%20(5).png",
       "colors": [
-        { "name": "Pastel Pink", "hex": "#F8C8DC" },
+        { "name": "Pastel Pink", "hex": "#f6dadf" },
         { "name": "Pastel Peach", "hex": "#FFD6C2" },
         { "name": "Pastel Lilac", "hex": "#DCC6F2" }
       ]

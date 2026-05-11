@@ -33,23 +33,29 @@ export const weddingConfig = {
   // Venue Information
   venue: {
     ceremony: {
-      name: "Nuestra Señora de la Portería Parish Church - Daraga Church",
-      address: "Don Enrique Heights, Dulong Crasher",
-      city: "Antipolo",
-      state: "Rizal",
-      zip: "",
+      name: "San Roque's Peak Resort",
+      address: "Santa Maria Hill, Sta. Maria St., Barangay San Roque",
+      city: "Daraga",
+      state: "Albay, Philippines",
+      zip: "4501",
       time: "9:00 AM",
       details: "Please arrive 30 minutes early"
     },
     reception: {
-      name: "On Due Hotel & Events Place",
-      address: "Don Enrique Heights, Dulong Crasher",
-      city: "Antipolo",
-      state: "Rizal",
-      zip: "",
+      name: "Sinandayan Sua, Camalig",
+      address: "Purok 1, Sinandayan Sua, Bypass Road",
+      city: "Camalig",
+      state: "Albay, Philippines",
+      zip: "4502",
       time: "11:00 AM",
       details: "Casual/Semi-formal attire requested"
     }
+  },
+
+  // Gift Guide (Cash / digital gifts copy)
+  giftGuide: {
+    message:
+      'Your company is the greatest gift. Should you wish to bless us further, we would be grateful for cash gifts, which may also be shared digitally.'
   },
 
   // RSVP Information
@@ -58,7 +64,9 @@ export const weddingConfig = {
     email: "",
     phone: "(555) 123-4567",
     website: "",
-    message: "Please RSVP by May 23rd, 2026"
+    message: "Please RSVP by May 23rd, 2026",
+    /** Google Forms: Send → embed HTML → paste the form URL with ?embedded=true (remove any "how many guests" field in the form editor) */
+    formEmbedUrl: ""
   },
 
   // Theme and Styling
@@ -94,7 +102,7 @@ export const weddingConfig = {
     // Image shown in the section after Entourage (leave empty string to hide section)
     sectionAfterEntourage: "/assets/images/prenup/1Z6_4024.jpg",
     // Image shown in the section before Gift Guide (leave empty string to hide section)
-    sectionBeforeGift: "/assets/images/prenup/1Z6_4086.jpg"
+    sectionBeforeGift: "/assets/images/prenup/1Z6_4627.jpg"
   },
 
   // Additional Information
