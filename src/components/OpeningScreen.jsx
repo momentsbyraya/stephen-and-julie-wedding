@@ -45,7 +45,7 @@ function OpeningScreen({ onEnvelopeOpen, onStampClick }) {
       <div 
         className="absolute inset-0 opening-bg-pulse"
         style={{
-          backgroundImage: 'url(/assets/images/graphics/openine-bg-6.jpg)',
+          backgroundImage: 'url(/assets/images/graphics/bgimage.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

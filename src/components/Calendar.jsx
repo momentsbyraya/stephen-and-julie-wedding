@@ -113,19 +113,19 @@ const Calendar = () => {
         src={floralTopRight}
         alt=""
         aria-hidden
-        className={`${floralTopRightClass} top-0 right-0 object-top`}
+        className={`${floralTopRightClass} -top-8 -right-5 sm:-top-10 sm:-right-8 object-top`}
       />
       <img
         src={floralBottomLeft}
         alt=""
         aria-hidden
-        className={`${floralBottomCornerClass} bottom-0 left-0 object-bottom`}
+        className={`${floralBottomCornerClass} -bottom-8 -left-4 sm:-bottom-10 sm:-left-8 object-bottom`}
       />
       <img
         src={floralBottomRight}
         alt=""
         aria-hidden
-        className={`${floralBottomCornerClass} bottom-0 right-0 object-bottom`}
+        className={`${floralBottomCornerClass} -bottom-8 -right-4 sm:-bottom-10 sm:-right-8 object-bottom`}
       />
 
       <div className="relative z-[2] w-full max-w-md sm:max-w-xl lg:max-w-3xl xl:max-w-6xl mx-auto px-4 sm:px-6">

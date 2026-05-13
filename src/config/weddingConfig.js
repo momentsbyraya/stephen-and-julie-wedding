@@ -33,7 +33,7 @@ export const weddingConfig = {
   // Venue Information
   venue: {
     ceremony: {
-      name: "San Roque's Peak Resort",
+      name: "Nuestra Señora De La Porteria Parish Church",
       address: "Santa Maria Hill, Sta. Maria St., Barangay San Roque",
       city: "Daraga",
       state: "Albay, Philippines",
@@ -42,7 +42,7 @@ export const weddingConfig = {
       details: "Please arrive 30 minutes early"
     },
     reception: {
-      name: "Sinandayan Sua, Camalig",
+      name: "On Due Hotel and Events Place",
       address: "Purok 1, Sinandayan Sua, Bypass Road",
       city: "Camalig",
       state: "Albay, Philippines",
