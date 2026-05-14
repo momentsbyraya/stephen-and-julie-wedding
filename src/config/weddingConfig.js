@@ -66,7 +66,7 @@ export const weddingConfig = {
     website: "",
     message: "Please RSVP by May 23rd, 2026",
     /** Google Forms: Send → embed HTML → paste the form URL with ?embedded=true (remove any "how many guests" field in the form editor) */
-    formEmbedUrl: ""
+    formEmbedUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc6QDodzMiMIbKgFu7vIajQuvnOtS2ZcsBNwnuYBB2GRPHgqg/viewform?embedded=true"
   },
 
   // Theme and Styling
